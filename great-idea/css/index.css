@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -48,19 +49,184 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  padding: 20px 40px;
+  background: #40798C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 10px;
+  margin: auto 10px;
+  text-decoration: none;
+  color: #ccc;
+}
+.navbar a:hover {
+  transform: scale(1.2);
+}
+.logo {
+
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.header-left, .header-img{
+  flex-basis: 50%;
+}
+
+.header-left {
+  text-align: center;
+}
+
+.header-left h1 {
+  line-height: 1.2;
+  font-size: 62px;
+}
+.get-started {
+  margin-top: auto;
+  padding: 12px 60px;
+  outline: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  line-height: 1.2;
+}
+.get-started:hover {
+  background: #faf3dd;
+  transform: scale(1.2);
+}
+main {
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  min-height: 100vh;
+}
+.first-section,
+.third-section {
+  display: flex;
+  margin: 30px auto;
+}
+/* .second-section {
+  width: 100%;
+} */
+.second-section {
+  width: 100%;
+  background-image: url('../img/mid-page-accent.jpg');
+  height: 200px;
+}
+.header-img {
+  background-image: url('../img/header-img.png');
+  height: 420px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+.middle-img {
+  width: 100%;
+}
+.features,
+.services,
+.product {
+  margin-right: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about, .vision {
+  line-height: 1.5;
+}
+
+hr {
+  width: 100% !important;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.contact p:nth-child(4) {
+  padding: 20px 0;
+  }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  height: 100px;
+}
+
+.services-main .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.services-main .content {
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  font-size: 48px;
+}
+
+.card {
+  width: 350px;
+  line-height: 1.2;
+  margin: 20px;
+}
+.card-header {
+  height: 200px;
+  background-image: url('../img/mid-page-accent.jpg');
+}
+
+.card-body h3 {
+  padding-top: 20px;
+}
+.card a {
+  margin-top: 20px;
+  text-decoration: none
+}
