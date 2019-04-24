@@ -194,39 +194,68 @@ footer {
   height: 100px;
 }
 
-.services-main .title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.2;
+.services-main{
+	line-height: 1.2;
 }
 
-.services-main .content {
-  margin: 30px auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-.title h1 {
-  font-size: 48px;
+.services-header-img {
+	width: 100%;
 }
 
-.card {
-  width: 350px;
-  line-height: 1.2;
-  margin: 20px;
-}
-.card-header {
-  height: 200px;
-  background-image: url('../img/mid-page-accent.jpg');
+.services-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
-.card-body h3 {
-  padding-top: 20px;
+.service-box {
+	width: 49%;
+	border: 2px solid rgb(102, 100, 100);
+	margin-bottom: 15px;
+	padding: 10px 10px 30px 10px;
+	background-color:rgb(223, 217, 217);
+
 }
-.card a {
-  margin-top: 20px;
-  text-decoration: none
+.service-box p {
+	margin: 20px 0 30px 0;
+}
+.learn-more {
+	border: 1px solid rgb(102, 100, 100);
+	background-color: #fff;
+	text-decoration: none;
+	color: black;
+	padding: 10px 50px;
+	margin-bottom: 50px;
+	border-radius: 4px;
+}
+.learn-more:hover {
+  background: #faf3dd;
+  transform: scale(1.2);
+}
+.fact-box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+}
+.fact, .fact-img {
+	width: 46%;
+}
+.fact {
+	padding-right: 10px;
+}
+.fact-img {
+	width: fit-content;
+	padding-left: 10px;
+}
+
+.fact-box ul {
+	list-style: square;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.fact-box ul li {
+	padding: 5px 0;
 }
