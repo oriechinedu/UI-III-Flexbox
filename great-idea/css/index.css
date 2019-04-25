@@ -204,13 +204,14 @@ footer {
 
 .services-container{
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
 .service-box {
-	width: 49%;
+	flex-basis: 49%;
 	border: 2px solid rgb(102, 100, 100);
 	margin-bottom: 15px;
 	padding: 10px 10px 30px 10px;
@@ -240,7 +241,7 @@ footer {
 
 }
 .fact, .fact-img {
-	width: 46%;
+	flex-basis: 46%;
 }
 .fact {
 	padding-right: 10px;
@@ -278,7 +279,7 @@ footer {
   align-items: center;
 }
 .title h1 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 .card {
@@ -307,4 +308,36 @@ footer {
 }
 .card-body {
 	padding: 20px;
+}
+
+.navbar-toggle {
+		display: none;
+}
+.navbar-toggle  div{
+	width: 40px;
+	height: 4px;
+	margin: 5px 0;
+	background-color: #fff;
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		display: none;
+	}
+	.navbar-toggle {
+		display: block;
+		margin-right: auto;
+	}
+	.service-box {
+		flex-basis: 100%;
+	}
+	main {
+		width: 90%;
+	}
+	.navigation {
+		padding: 20 30px;
+	}
+	.card {
+		flex-basis: 100%;
+	}
 }
