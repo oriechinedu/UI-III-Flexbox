@@ -106,7 +106,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+	width: 100%;
+	flex-wrap: wrap;
   margin: 30px 0;
 }
 
@@ -143,7 +144,8 @@ main {
 }
 .first-section,
 .third-section {
-  display: flex;
+	display: flex;
+	flex-wrap: wrap;
   margin: 30px auto;
 }
 /* .second-section {
@@ -165,16 +167,21 @@ main {
 .middle-img {
   width: 100%;
 }
-.features,
-.services,
-.product {
-  margin-right: 20px;
-  text-align: justify;
-  line-height: 1.5;
+.col-2,
+.col-3 {
+	text-align: justify;
+	line-height: 1.5;
+}
+.col-2 {
+	flex-basis: 48%;
 }
 
-.about, .vision {
-  line-height: 1.5;
+.col-3 {
+	flex-basis: 31%;
+}
+
+.mr {
+	margin-right: 20px;
 }
 
 hr {
@@ -207,7 +214,7 @@ footer {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 }
 
 .service-box {
@@ -339,5 +346,15 @@ footer {
 	}
 	.card {
 		flex-basis: 100%;
+	}
+	.title h1 {
+		text-align: center;
+	}
+	.header-left, .header-img{
+		flex-basis: 100%;
+	}
+	.col-2, .col-3 {
+		flex-basis: 100%;
+		margin-bottom: 20px;
 	}
 }
